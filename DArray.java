@@ -9,11 +9,14 @@ public class DArray {
 	private long[] vector; // ref to array vector
 	private int nElementos; // number of data items
 	
-	public DArray(int max) // constructor
+	public DArray(int max) //  clase constructor
 	{
 	vector = new long[max]; 
 	nElementos = 0;
 	}
+	/*
+	 * Métodos
+	 */
 	
 	public void agregar(long value) // put element into array
 	{
@@ -33,17 +36,19 @@ public class DArray {
 	long[] espacio = new long[nElementos];
 	recMergeSort(espacio, 0, nElementos-1);
 	}
+	/* Metodos Encapsulados
+	 * 
+	 */
 
 	private void recMergeSort(long[] espacio, int Limite_inferior, int Limite_superior){
 	
 		if(Limite_inferior == Limite_superior) // if range is 1,
 			return; // no use sorting
-		else
-	{ // find mediopoint
-	int medio = (Limite_inferior+Limite_superior) / 2;	// sort low half
-	recMergeSort(espacio, Limite_inferior, medio);	// sort high half
-	recMergeSort(espacio, medio+1, Limite_superior);	// merge them
-	merge(espacio, Limite_inferior, medio+1, Limite_superior);
+		else{ // find mediopoint
+			int medio = (Limite_inferior+Limite_superior) / 2;	// sort low half
+			recMergeSort(espacio, Limite_inferior, medio);	// sort high half
+			recMergeSort(espacio, medio+1, Limite_superior);	// merge them
+			merge(espacio, Limite_inferior, medio+1, Limite_superior);
 	} // end else
 	} // end recMergeSort()
 	
@@ -67,3 +72,4 @@ public class DArray {
 			} // end merge()
 			
 } // end class DArray
+	
