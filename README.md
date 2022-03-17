@@ -1,5 +1,5 @@
 # Merge-Sort
-                   Algoritmo de ordenamiento Método MergeSort
+                   Algoritmo de ordenamiento Método MergeSort (mezcla)
 
 El algoritmo consiste en la técnica  “divide y vence”, el proceso es simple:
 Si se ordena la primera mitad de la lista,
