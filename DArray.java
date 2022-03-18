@@ -7,7 +7,7 @@ public class DArray {
 	 * Author Nordevelop
 	 */
 	private long[] vector; // ref to array vector
-	private int nElementos; // number of data items
+	private int nElementos; // variable int
 	
 	public DArray(int max) //  clase constructor
 	{
@@ -37,20 +37,20 @@ public class DArray {
 	recMergeSort(espacio, 0, nElementos-1);
 	}
 	/* Metodos Encapsulados
-	 * 
+	 * Con Acceso denegado en la clase Main()
 	 */
 
 	private void recMergeSort(long[] espacio, int Limite_inferior, int Limite_superior){
 	
-		if(Limite_inferior == Limite_superior) // if range is 1,
-			return; // no use sorting
+		if(Limite_inferior == Limite_superior) 
+			return;
 		else{ // find mediopoint
-			int medio = (Limite_inferior+Limite_superior) / 2;	// sort low half
-			recMergeSort(espacio, Limite_inferior, medio);	// sort high half
-			recMergeSort(espacio, medio+1, Limite_superior);	// merge them
+			int medio = (Limite_inferior+Limite_superior) / 2;	
+			recMergeSort(espacio, Limite_inferior, medio);	
+			recMergeSort(espacio, medio+1, Limite_superior);	
 			merge(espacio, Limite_inferior, medio+1, Limite_superior);
-	} // end else
-	} // end recMergeSort()
+	} // fin else
+	} // fin metodo recMergeSort()
 	
 	private void merge(long[] espacio, int pointer_bajo,int pointer_alto, int Limite_superior){
 		
@@ -69,7 +69,7 @@ public class DArray {
 		espacio[j++] = vector[pointer_alto++];
 	for(j=0; j<n; j++)
 		vector[Limite_inferior+j] = espacio[j];
-			} // end merge()
+			} // fin metodo merge()
 			
-} // end class DArray
+} // fin clase DArray
 	
