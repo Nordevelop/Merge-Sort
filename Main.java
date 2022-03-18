@@ -25,8 +25,10 @@ public class Main {
 		arr.agregar(0);
 		arr.agregar(6);
 		arr.agregar(1);
+		System.out.println("Array Desordenado: ");
 		arr.mostrar(); // mostrar el vector
 		arr.mergeSort(); //vector arr[] ordenado con el algoritmo de Mergesort
+		System.out.println("Array Ordenado con el metodo Merge-sort: ");
 		arr.mostrar(); // mostrar el vector ordenado
 		
 	}
