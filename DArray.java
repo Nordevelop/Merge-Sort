@@ -24,14 +24,14 @@ public class DArray {
 	nElementos++; // incrementar
 	}
 	
-	public void mostrar() // displays array contents
+	public void mostrar() // mostrar el vector
 	{
-	for(int j=0; j<nElementos; j++) // for each element,
+	for(int j=0; j<nElementos; j++) // for each 
 	System.out.print(vector[j] + " "); //
 	System.out.println(" ");
 	}
 
-	public void mergeSort() // called by main()
+	public void mergeSort() 
 	{ // provides espacio
 	long[] espacio = new long[nElementos];
 	recMergeSort(espacio, 0, nElementos-1);
