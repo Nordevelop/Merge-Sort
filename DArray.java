@@ -45,7 +45,7 @@ public class DArray {
 		if(Limite_inferior == Limite_superior) 
 			return;
 		else{ // find mediopoint
-			int medio = (Limite_inferior+Limite_superior) / 2;	
+			int medio = (Limite_inferior+Limite_superior) / 2;  //medio = pivote	
 			recMergeSort(espacio, Limite_inferior, medio);	
 			recMergeSort(espacio, medio+1, Limite_superior);	
 			merge(espacio, Limite_inferior, medio+1, Limite_superior);
