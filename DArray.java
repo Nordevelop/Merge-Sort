@@ -18,10 +18,10 @@ public class DArray {
 	 * Métodos
 	 */
 	
-	public void agregar(long value) // put element into array
+	public void agregar(long value) //agregar elementos dentro del Array
 	{
-	vector[nElementos] = value; // insert it
-	nElementos++; // increment size
+	vector[nElementos] = value;
+	nElementos++; // incrementar
 	}
 	
 	public void mostrar() // displays array contents
