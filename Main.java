@@ -10,7 +10,7 @@ public class Main {
 		* Algoritmo de ordenamiento Mergesort
 		* Con Recursividad
 		*/
-		int maxSize = 100; //variable para controlar el limite maximo tamaño del Vector
+		int maxSize = 100; 
 		DArray arr; 
 		arr = new DArray(maxSize); // creacion del vector
 		arr.agregar(10); // agregar elementos al Vector
