@@ -5,13 +5,13 @@ public class DArray {
 	/*clase Darray Mergesort
 	 * 
 	 * Author Nordevelop
+	 * objetos encapsulados con acceso denegado fuera de la clase Darray
 	 */
-	private long[] vector; // ref to array vector
-	private int nElementos; // variable int
+	private long[] vector; 
+	private int nElementos;
 	
-	public DArray(int max) //  clase constructor
-	{
-	vector = new long[max]; 
+	public DArray(int max){ //  clase constructor
+	vector = new long[max]; // objetos con acceso permitido fuera de la clase Darray
 	nElementos = 0;
 	}
 	/*
